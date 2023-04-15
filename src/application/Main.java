@@ -11,8 +11,8 @@ public class Main {
 		String primeiro, segundo, terceiro;
 
 		System.out.println("""
-				                       ____
-				                      |    | Carnivoro | ---| Aguia |
+				                       ____| Carnivoro | ---| Aguia |
+				                      |    
 				             ___ Ave <
 				            |         |
 				            |         |___| Onivoro |  ---- | Pomba |
@@ -25,7 +25,7 @@ public class Main {
 				                          |___| Herbivoro | ---- | Vaca |
 
 				                                  ____| Hematófago | --- | Pulga |
-					                             |
+					                         |
 				                                 |
 				                _____| Inseto | <
 				               |                 |
