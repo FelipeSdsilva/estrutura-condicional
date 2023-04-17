@@ -88,32 +88,13 @@ public class Main {
 		int sum = 0;
 
 		for (int i = 0; i < vec.length; i++) {
-			String palavra;
-			if (i == 0) {
-				palavra = "A";
-			} else if (i == 1) {
-				palavra = "B";
-			} else {
-				palavra = "C";
-			}
-
+			String palavra = (i == 0)?  "A" : (i == 1)? "B" : "C";
 			System.out.print("Digite o valor " + palavra + ": ");
 			vec[i] = sc.nextInt();
 		}
 
 		sum = vec[0] + vec[1];
-
 		String result = ( sum > vec[2] ) ? "\nSoma de A + B é maior do que C" : (sum < vec[2])? "\nSoma de A + B é menor do que C" : "\nSoma de A + B é igual C" ;
-
-		/*if (sum > vec[2]) {
-			System.out.println(
-					vec[0] + " + " + vec[1] + " = " + sum + " > " + vec[2] + ");
-		} else if () {
-			System.out.println(
-					vec[0] + " + " + vec[1] + " = " + sum + " < " + vec[2] + "");
-		} else {
-			System.out.println(vec[0] + " + " + vec[1] + " = " + sum + " == " + vec[2] + "\nSoma de A + B é igual C");
-		}*/
 		System.out.println(result);
 	}
 
