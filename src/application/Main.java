@@ -10,7 +10,7 @@ public class Main {
 
 		String primeiro, segundo, terceiro;
 
-		System.out.println("""
+    /*		System.out.println("""
 				                       ____| Carnivoro | ---| Aguia |
 				                      |    
 				             ___ Ave <
@@ -25,13 +25,12 @@ public class Main {
 				                          |___| Herbivoro | ---- | Vaca |
 
 				                                  ____| Hematófago | --- | Pulga |
-					                         |
+					                             |
 				                                 |
 				                _____| Inseto | <
 				               |                 |
 				               |                 |____| Herbivoro | ---- | Lagarta |
 				Invertebrados <
-				               |
 				               |                    _________| Hematófago | --- | Sanguessuga |
 				               |                   |
 				               |                   |
@@ -76,7 +75,9 @@ public class Main {
 				}
 			}
 		}
-		
+		*/
+
+		valoresInteirosAMaisBMenorOuIgualC(sc);
 		sc.close();
 
 	}
@@ -102,15 +103,18 @@ public class Main {
 
 		sum = vec[0] + vec[1];
 
-		if (sum > vec[2]) {
+		String result = ( sum > vec[2] ) ? "\nSoma de A + B é maior do que C" : (sum < vec[2])? "\nSoma de A + B é menor do que C" : "\nSoma de A + B é igual C" ;
+
+		/*if (sum > vec[2]) {
 			System.out.println(
-					vec[0] + " + " + vec[1] + " = " + sum + " > " + vec[2] + "\nSoma de A + B é maior do que C");
-		} else if (sum < vec[2]) {
+					vec[0] + " + " + vec[1] + " = " + sum + " > " + vec[2] + ");
+		} else if () {
 			System.out.println(
-					vec[0] + " + " + vec[1] + " = " + sum + " < " + vec[2] + "\nSoma de A + B é menor do que C");
+					vec[0] + " + " + vec[1] + " = " + sum + " < " + vec[2] + "");
 		} else {
 			System.out.println(vec[0] + " + " + vec[1] + " = " + sum + " == " + vec[2] + "\nSoma de A + B é igual C");
-		}
+		}*/
+		System.out.println(result);
 	}
 
 	public static void parEimparPositivoOuNegativo(Scanner sc) {
